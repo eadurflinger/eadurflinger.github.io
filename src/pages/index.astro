@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+import Faces from '../components/Faces.astro';
+---
+
+<Layout title="Elizabeth Durflinger">
+	<main>
+		<div class="center-wrapper">
+			<Faces></Faces>
+			<h1>Hello, I am Elizabeth Durflinger.</h1>
+			<div class="nav-buttons">
+				<Button title="Past" href="/past/"/>
+				<Button title="Present" href="/present/"/>
+				<Button title="Future" href="/future/"/>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+		text-align: center;
+		font-weight: 400;
+		margin-top: 200px;
+	}
+	h1 {
+		font-size: 1rem;
+		font-weight: 400;
+		margin: 0;
+		text-align: center;
+		padding-top: 20px;
+	}
+	.center-wrapper {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.hero-gif img{
+		width: 400px;
+	}
+	.nav-buttons {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 20px;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>

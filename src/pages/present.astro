@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+---
+
+<Layout title="Elizabeth's Present">
+	<main>
+        <div class="image">
+            <img src="../assets/me.svg">
+        </div>
+        <div class="text">
+            <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
+            <div>
+            Present
+            </div>
+            <div class="profession">
+                <h2>Profession</h2>
+                <h3>Ving - UI Developer</h3>
+                <p>Improving and maintaining the frontend codebase using Angular and
+                    TypeScript.</p>
+                    <p>Highlights: </p>
+                <ul>
+                    <li>updating to latest Angular version from Angular 4. </li>
+                    <li>Internationalization </li>
+                    <li>Typing endpoints  </li>
+                    <li>Implementing CI   </li>
+                </ul>
+            </div>
+            <div class="art">
+                <h2>Art</h2>
+                <h3>Resin earrings</h3> 
+                <p>I make resin earrings out of locally foraged plants, mushrooms, and bugs. I sell these at art fairs and at <a href="https://www.herprimitiveways.com/">The Dreaming Tree</a>.</p> 
+                <!-- <h3>Prints</h3>  
+                <p>I sell prints of my digital art <a href="/">here</a>.</p>  -->
+                <h3>Knitting double-brim hats</h3>
+                <p>My current favorite knitting pattern. <a href="/">Here</a> are some examples of my work</p> 
+                <h3>Zines</h3> 
+                <p>I enjoy making horrible little zines that brew discomfort.</p> 
+            </div>
+            <div class="skill-button">
+                <Button title="Skills" href="/skills/"/>
+            </div>
+            <div class="socials">
+                <a href="https://instagram.com/elizabethdurflinger"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/eadurflinger"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 150ch;
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+	}
+    .image {
+        width: 600px;
+    }
+    .text {
+        max-width: 60ch;
+    }
+    .skill-button {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .socials {
+        margin-top: 20px;
+    }
+</style>
