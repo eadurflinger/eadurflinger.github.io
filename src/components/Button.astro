@@ -40,4 +40,9 @@ const { href, title } = Astro.props;
 	.nav-button:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent));
 	}
+	@media (max-width: 500px) {
+        .nav-button {
+            padding: 5px 20px;
+        }
+    }
 </style>
